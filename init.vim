@@ -11,12 +11,16 @@ set showmatch
 set termguicolors
 set sw=2
 set relativenumber
+
 so ~/.config/nvim/.vim/plugins.vim
 so ~/.config/nvim/.vim/plugin-config.vim
 so ~/.config/nvim/.vim/maps.vim
 
 set laststatus=2
 set noshowmode
+
+au BufNewFile,BufRead *.html set filetype=htmldjango
+lua require'colorizer'.setup()
 
 "" Searching
 set hlsearch                    " highlight matches
