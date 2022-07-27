@@ -2,9 +2,8 @@ call plug#begin('~/.vim/plugged')
 
 " syntax
 Plug 'sheerun/vim-polyglot'
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'yuezk/vim-js'
-Plug 'flowtype/vim-flow'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'norcalli/nvim-colorizer.lua'
 
 " status bar
 Plug 'maximbaz/lightline-ale'
@@ -18,10 +17,8 @@ Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'scrooloose/nerdtree'
 
 " typing
-Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
-Plug 'mattn/emmet-vim'
 
 " tmux
 Plug 'benmills/vimux'
@@ -47,6 +44,7 @@ Plug 'scrooloose/nerdcommenter'
 
 " git
 Plug 'tpope/vim-fugitive'
+
 Plug 'tpope/vim-repeat'
 
 call plug#end()
